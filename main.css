@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,500;1,700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    background-image: url(images/night.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
+#app{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient( 45deg, rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.1))
+
+}
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 15px 15px
+}
+
+header input {
+    width:100%;
+    max-width:280;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 16px 0px 16px 0px;
+    background-color: rgb(255, 255, 255, 0.3);
+    color: #313131;
+    font-size:20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+    max-width:500px;
+}
+
+header input:focus{
+    background-color: rgb(255, 255, 255, 0.6);;
+}
+
+main{
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+#location .city{
+    font-size: 32px;
+    margin-bottom:6px;
+}
+#location .date{
+    font-size:16px;
+}
+
+#current .temp{
+    font-size: 100px;
+    font-weight: 900;
+    margin: 30px 0;
+    text-shadow: 3px 10px rgba(0, 0, 0, 0.3);
+}
+#current .temp{
+    font-weight:500;
+}
+#current .temp span{
+    font-weight:300;
+    letter-spacing: -20px;
+    margin-left: -20px;
+}
+
+#current .weather {
+    font-size: 30px;
+    font-weight: 700;
+    font-style:italic;
+    margin-bottom:15px;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.4);
+}
+
+#current .min-max{
+    font-size:24px;
+    font-weight:500;
+    text-shadow: 0 4px hsla(0, 0%, 0%, 0.4);
+}
